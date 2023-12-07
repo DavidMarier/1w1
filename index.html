@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP2</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/formulaire.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="entete">
+        <header>
+            <!-- 
+                Pour crééer rapidement un logo
+                https://www.canva.com/templates/?query=logo  
+            -->
+            <img class="logo" src="./images/coneorange.jpg" alt="coneorange">
+        
+
+            <h1 class="titre">EDM</h1> 
+            <!-- https://svgbox.net/ -->
+            <!--
+                id peut être utilisée une seule fois dans le document
+                La même classe  peut être utiliser plusieurs fois 
+            -->
+            <input type="checkbox" id="chk_burger">
+            <label id="burger" for="chk_burger">
+                <img  src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=fff" width="32" height="32">
+                <img src="https://s2.svgbox.net/hero-outline.svg?ic=x&color=fff" width="32" height="32">
+            </label>
+            <nav class="navigation">
+                <a href="#accueil">Accueil</a>
+                <a href="#tableau">Tableau</a>
+                <a href="#articles">Articles</a>
+                <a href="#galerie">Galerie</a>
+                <a href="#video">Vidéo</a>
+                <a href="#inscription">Inscription</a>
+                <a href="#contact">Contact</a> 
+            </nav>
+        </header> 
+    </div> <!-- fin classe entete-->
+   <div id="accueil">
+    <section >
+        <h2>Accueil</h2>
+        <ul class="liste_accueil">
+            <li>TP2</li>
+            <li>EDM</li>
+            <li>David Marier</li>
+            <li>582-1W1 - Mise en page Web</li>
+            <li>Techniques d'intégration multimédia</li>
+            <li>Collège de Maisonneuve</li>
+            <li>Github</li>
+            <li>Automne 2023</li>
+        </ul>
+    </section>
+   </div> <!-- fin #accueil -->
+   </div>
+   <div id="tableau">
+    <section>
+        <h2>Tableau</h2>
+        <table class="__tableau">
+            <caption class="titre__tableau">EDM</caption>
+            <tr>
+                <th>House</th>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Techno</th>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Hardstyle</th>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Trap</th>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </section>
+   </div> <!-- fin #tableau -->
+   <div id="articles">
+    <section>
+        <h2>Articles</h2>
+    </section>
+   </div> <!-- fin articles -->
+   <div id="galerie">
+    <section>
+        <h2>Galerie</h2>
+    </section>
+   </div> <!-- fin galerie -->
+   <div id="video">
+    <section>
+        <h2>Vidéo</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=maI0-kf5MWM" frameborder="0" allowfullscreen></iframe> <!--download video-->
+    </section>
+   </div> <!-- fin video -->
+   <div id="inscription">
+    <section>
+        <h2>Inscription</h2>
+         <form action="" class="formulaire">
+            <label class="form__nom" for="">Nom<input type="text"></label>
+            <label class="form__prenom" for="">Prénom<input type="text"></label>
+           <fieldset class="typesedm">
+            <legend>Types d'EDM</legend>
+            <label for="">House<input type="checkbox"  id=""></label>
+            <label for="">Techno<input type="checkbox"  id=""></label>
+            <label for="">Hardstyle<input type="checkbox"  id=""></label>
+            <label for="">Trap<input type="checkbox"  id=""></label>
+            </fieldset>
+        <fieldset>
+            <!-- Pour les radio bouton, on crée un groupe en utilisant la même valeur pour l'attribut name-->
+            <legend>Âge</legend>
+            <label for="rad__1">18-</label>
+            <input type="radio" name="age" id="rad__1">
+            <label for="rad__2">18-25</label>
+            <input type="radio" name="age" id="rad__2">
+            <label for="rad__3">26-35</label>
+            <input type="radio" name="age" id="rad__3">
+            <label for="rad__4">36-45</label>
+            <input type="radio" name="age" id="rad__4">
+            <label for="rad__5">45+</label>
+            <input type="radio" name="age" id="rad__5">
+        </fieldset>
+        </form>
+
+    </section>
+   </div> <!-- fin articles -->
+   <div id="contact">
+    <footer >
+        Pied de page
+    </footer>
+   </div>
+</body>
+</html>

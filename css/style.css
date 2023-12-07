@@ -1,0 +1,146 @@
+* {
+    margin : 0;
+    padding:0;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+/*  la balise body est le conteneur principal
+     flexbox dont les enfants s'afficheront sur une colonne
+     flex-direction : column;
+*/     
+
+body{
+    display : flex;
+    flex-direction:column;
+} 
+
+/*
+opérateur de sélection « > » permet de sélectionner
+ l'enfant direct de la balise qui précède le «>»
+ La différence entre « > » et « » c'est que plus grand permet de sélectionner
+ l'enfant direct et « » permet de sélectionner l'enfant l'arrière petite enfant et ainsi de suite.
+
+ Le « > » est plus spécifique que l'aopérateur « »
+*/
+
+/*
+ C'est toujours le dernier élément de la suite qui est sélectionné. 
+ Et c'est sur cet élément qu'on applique la règle de style
+*/
+body  > div {
+    display : flex;
+    justify-content: center;
+ 
+}
+
+body > div > section,
+body > div > footer,
+body > div > header {
+    display : flex;
+    flex: 0 1 1100px;
+    /*border : 1px solid #aaa;*/
+    background-color: rgba(0,0,0,.1); /* filtre de transparence */
+}
+
+body > div > section {
+    padding-top : 100px;
+}
+
+body > div > header{
+    position : relative;
+}
+
+body > div > section{
+    min-height : 100vh;
+}
+/* Entete */
+body>div:nth-of-type(1){
+    background-color: rgb(40, 42, 78);
+    position : sticky;
+    top : 0;
+}
+body>div:nth-of-type(2){
+    background-color: #fff;
+}
+body>div:nth-of-type(3){
+    background-color: #eee;
+}
+body>div:nth-of-type(4){
+    background-color: #ddd;
+}
+body>div:nth-of-type(5){
+    background-color: #ccc;
+}
+body>div:nth-of-type(6){
+    background-color: #bbb;
+}
+body>div:nth-of-type(7){
+    background-color: #aaa;
+}
+body>div:nth-of-type(8){
+    background-color: #000000;
+}
+
+
+
+.entete {
+    
+}
+.titre{
+    margin: 20px 0px 0px 32px;
+    color: white;
+    font-family: 'Permanent Marker', sans-serif;
+    font-size: 50px;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+}
+h2{
+    font-size: 2rem;
+    font-family: 'Permanent Marker', sans-serif;
+}
+
+#accueil{
+    align-content: center;
+}
+#accueil h2{
+    margin: 0 0 0 10px;
+}
+
+.liste_accueil{
+    margin: 225px 0px 0px 250px; 
+    font-size: 2rem;
+}
+
+#tableau h2{
+    margin: -60px 0px 0px 10px;
+}
+.__tableau{
+    border-collapse: collapse;
+    background-color: #eee;
+    flex: 0 1 1000px;
+    margin: 0px 125px 0px 0px;
+}
+.__tableau th, .__tableau td{
+    width: 7rem;
+    height: 3rem;
+    border: 1px solid black;
+    text-align: center;
+    
+}
+.titre__tableau{
+    
+}
+
+footer{
+    color: #fff;
+}
