@@ -98,7 +98,7 @@ body>div:nth-of-type(8){
     margin: 20px 0px 0px 32px;
     color: white;
     font-family: 'Permanent Marker', sans-serif;
-    font-size: 50px;
+    font-size: clamp(1rem, -0.875rem + 8.333vw, 3.5rem);
 }
 .logo{
     width: 100px;
@@ -140,6 +140,44 @@ h2{
 .titre__tableau{
     
 }
+
+#galerie section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.image_galerie{
+    flex: 0 1 calc(33.33% - 20px); 
+    margin-bottom: 20px; 
+    box-sizing: border-box;
+    text-align: center; 
+}
+.image_caption {
+    margin-top: -50px;
+    margin-left: -110px;
+}
+
+#video section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; 
+}
+.video {
+    flex: 0 1 calc(33.33% + 100px); 
+    margin-bottom: 20px; 
+    box-sizing: border-box;
+    text-align: center;
+}
+.video_caption {
+    margin-top: -50px;
+    margin-left: -200px;
+}
+#video h2 {
+    margin-bottom: 20px;
+}
+
 
 footer{
     color: #fff;
