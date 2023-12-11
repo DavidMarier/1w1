@@ -157,6 +157,9 @@ h2{
     margin-top: -50px;
     margin-left: -110px;
 }
+/*.deadmau5_img{
+    filter: saturate(1.25);
+}*/
 
 #video section {
     display: flex;
@@ -172,7 +175,7 @@ h2{
 }
 .video_caption {
     margin-top: -50px;
-    margin-left: -200px;
+    margin-left: -240px;
 }
 #video h2 {
     margin-bottom: 20px;
