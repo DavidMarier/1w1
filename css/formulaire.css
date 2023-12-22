@@ -8,9 +8,11 @@ https://developer.mozilla.org/fr/docs/web/css/css_selectors
     gap : 10px;
     align-self: center;
     align-items: center;
+   
 }
 .formulaire input[type="text"]{
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(40, 42, 78, 0.3);
+    border-radius: 5%;
 }
 .formulaire fieldset {
     background-color: #bbb;
@@ -29,9 +31,4 @@ https://developer.mozilla.org/fr/docs/web/css/css_selectors
 .typesedm{
     display: flex;
     align-self: center;
-
 }
-
-/* sélecteur plus spécifique */
-.form__nom{}
-.form__prenom {}

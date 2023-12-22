@@ -63,7 +63,7 @@ body > div > section{
 }
 /* Entete */
 body>div:nth-of-type(1){
-    background-color: rgb(40, 42, 78);
+    background-image: linear-gradient(to bottom, rgb(40, 42, 78), rgb(0, 0, 0)) ;
     position : sticky;
     top : 0;
 }
@@ -94,6 +94,22 @@ body>div:nth-of-type(8){
 .entete {
     
 }
+h3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+figcaption{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+li{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+}
+a{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 .titre{
     margin: 20px 0px 0px 32px;
     color: white;
@@ -147,6 +163,18 @@ h2{
     font-size: 2rem;
 }
 
+tr{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+th{
+    background-color: #aaa;
+}
+
+.article{
+    display: flex;
+
+}
+
 #galerie section{
     display: flex;
     flex-wrap: wrap;
@@ -189,5 +217,23 @@ h2{
 
 
 footer{
+    color: #fff;
+}
+footer div{
+    display: inline-block;
+}
+/*.info_footer{
+    display: flex;
+    align-items: center;
+}*/
+.img_footer{
+    /*display: flex;
+    gap: 100px;*/
+    display: inline-block;
+}
+.adresse__cegep{
+    color: #fff;
+}
+.adresse__lien{
     color: #fff;
 }
