@@ -2,6 +2,13 @@
 https://developer.mozilla.org/fr/docs/web/css/css_selectors
 */
 
+#inscription section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 150px;
+}
+
 .formulaire{
     display : flex;
     flex-direction: column;
