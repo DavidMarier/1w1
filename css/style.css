@@ -90,10 +90,6 @@ body>div:nth-of-type(8){
 }
 
 
-
-.entete {
-    
-}
 h3{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -154,10 +150,6 @@ h2{
 }
 
 .__tableau{
-    /*display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;*/
     border-collapse: collapse;
     background-color: #eee;
     flex: 0 1 1000px;
@@ -197,9 +189,9 @@ th{
     margin-top: -50px;
     margin-left: -110px;
 }
-/*.deadmau5_img{
+.deadmau5_img{
     filter: saturate(1.25);
-}*/
+}
 
 #video section {
     display: flex;
