@@ -67,6 +67,7 @@ body>div:nth-of-type(1){
     position : sticky;
     top : 0;
 }
+/* Modifie la couleur des sections */
 body>div:nth-of-type(2){
     background-color: #fff;
 }
@@ -89,7 +90,7 @@ body>div:nth-of-type(8){
     background-color: #000000;
 }
 
-
+/* Modifie la police de certains éléments */
 h3{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -105,22 +106,31 @@ p{
 a{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-
 .titre{
     margin: 20px 0px 0px 32px;
     color: white;
     font-family: 'Permanent Marker', sans-serif;
     font-size: clamp(1rem, -0.875rem + 8.333vw, 3.5rem);
 }
-.logo{
-    width: 100px;
-    height: 100px;
-}
 h2{
     font-size: 2rem;
     font-family: 'Permanent Marker', sans-serif;
 }
+.liste_accueil{
+    font-size: 2rem;
+}
+.titre__tableau{
+    font-size: 2rem;
+}
 
+/* Modifie le logo du site */
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* Modifie la section accueil */
 #accueil section{
     display : flex;
     flex-direction: column;
@@ -129,10 +139,7 @@ h2{
     align-items: center;
 }
 
-.liste_accueil{
-    font-size: 2rem;
-}
-
+/* Modifie la section article */
 .info_article{
     display: flex;
     align-content: space-between;
@@ -149,6 +156,7 @@ h2{
     border-radius: 10%;
 }
 
+/* Modifie la section tableau */
 .__tableau{
     border-collapse: collapse;
     background-color: #eee;
@@ -162,10 +170,6 @@ h2{
     text-align: center;
     
 }
-.titre__tableau{
-    font-size: 2rem;
-}
-
 tr{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -173,6 +177,7 @@ th{
     background-color: rgba(40, 42, 78, 0.6);
 }
 
+/* Modifie la section galerie */
 #galerie section{
     display: flex;
     flex-wrap: wrap;
@@ -193,6 +198,7 @@ th{
     filter: saturate(1.25);
 }
 
+/* Modifie la section vidéo */
 #video section {
     display: flex;
     flex-wrap: wrap;
@@ -213,6 +219,7 @@ th{
     margin-bottom: 20px;
 }
 
+/* Modifie la section vidéo */
 footer{
     color: #fff;
 }
